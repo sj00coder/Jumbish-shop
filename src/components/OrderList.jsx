@@ -60,7 +60,7 @@ export default function OrderList({ mobileNo, order, setOrders }) {
                 >
                   <InfoIcon />
                   <Popover
-                    id={id}
+                    id={value.id}
                     open={open}
                     anchorEl={anchorEl}
                     onClose={handleClose}
@@ -74,7 +74,15 @@ export default function OrderList({ mobileNo, order, setOrders }) {
                     }}
                   >
                     <Typography sx={{ p: 2 }}>
-                      The content of the Popover.
+                      <List>
+                          {value.items.map((item,i) => {
+                              <ListItem key = {i}>
+                                  <ListItemText primary={item.item} secondary={item.quantity}>
+
+                                  </ListItemText>
+                              </ListItem>
+                          })}
+                      </List>
                     </Typography>
                   </Popover>
                 </IconButton>

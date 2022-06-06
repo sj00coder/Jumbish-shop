@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### Basic Assumptions
 
-In JSON Date of orders are been made in ./Store?Orders.json, Which are been formatted in api.js file.
+In JSON Date of orders are been stored in ./Store?Orders.json.
 
 #### Only 1234567890 Mobile No has Orders in json 
 

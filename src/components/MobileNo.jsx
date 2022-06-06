@@ -21,7 +21,7 @@ const MobileNo = ({mobileNo,setMobileNo}) => {
             size="small"
             value={mobileNo}
             onChange={onChangeHandler}
-            
+            defaultValue="1234567890"
           />
         </Box>
       

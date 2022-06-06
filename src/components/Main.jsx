@@ -22,7 +22,7 @@ import Modal from "./Modal";
 
 const Main = () => {
   const [activeStep, setActiveStep] = React.useState(0);
-  const [mobileNo, setMobileNo] = React.useState("");
+  const [mobileNo, setMobileNo] = React.useState("1234567890");
   const [orders, setOrders] = React.useState([]);
   const [openModal, setOpenModal] = React.useState(true);
   const [address, setAddress] = React.useState({
