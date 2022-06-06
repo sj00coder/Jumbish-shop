@@ -34,7 +34,7 @@ export default function Modal({data,open,setOpen,handleReset}) {
         aria-labelledby="responsive-dialog-title"
       >
         <DialogTitle id="responsive-dialog-title">
-          {"Use Google's location service?"}
+          {"Thank you !!"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText>

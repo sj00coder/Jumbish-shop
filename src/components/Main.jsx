@@ -42,7 +42,7 @@ const Main = () => {
       component: <MobileNo mobileNo={mobileNo} setMobileNo={setMobileNo} />,
     },
     {
-      label: "Past Orders",
+      label: "Orders",
       component: <OrderList mobileNo = {mobileNo} order={orders} setOrders={setOrders} />,
     },
     {
