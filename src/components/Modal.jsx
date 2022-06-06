@@ -7,8 +7,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-
-export default function Modal({open,setOpen,handleReset}) {
+import {sendData} from '../utils/api'
+export default function Modal({data,open,setOpen,handleReset}) {
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -19,6 +19,10 @@ export default function Modal({open,setOpen,handleReset}) {
   const handleClose = () => {
     setOpen(false);
   };
+
+  React.useEffect(() => {
+      sendData(data);
+  })
 
   return (
     <div>
@@ -35,6 +39,7 @@ export default function Modal({open,setOpen,handleReset}) {
         <DialogContent>
           <DialogContentText>
           All steps completed - you&apos;re finished
+          
           </DialogContentText>
         </DialogContent>
         <DialogActions>

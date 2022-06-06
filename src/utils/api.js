@@ -5,4 +5,8 @@ import orders from '../Store/Orders.json'
     result.sort(function(a,b) {return new Date(a.timestamp) - new Date(b.timestamp)})
     return result
 }
+
+export var sendData = (data) => {
+    console.log(data);
+}
 export default getOrders;

@@ -129,7 +129,7 @@ const Main = () => {
         //       Reset
         //     </Button>
         //   </Paper>
-        <Modal open = {openModal} setOpen = {setOpenModal} handleReset={handleReset}></Modal>
+        <Modal open = {openModal} setOpen = {setOpenModal} handleReset={handleReset} data= {{mobileNo,orders,address,timeSlot,tip}}></Modal>
         )}
       </CardContent>
       <CardActions>
